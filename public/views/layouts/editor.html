@@ -1,0 +1,9 @@
+<a href="#/layouts" class="btn btn-default">Back</a>
+<h2>Layout</h2>
+<form ng-submit="save()">
+    <label for="name">Name</label>
+    <input type="text" id="name" ng-model="layout.name"/>
+    <label for="footer">Footer</label>
+    <textarea id="footer" ui-tinymce ng-model="layout.foorter"></textarea>
+    <input type="submit" value="save" class="btn btn-primary"/>
+</form>

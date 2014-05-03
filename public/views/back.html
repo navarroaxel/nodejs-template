@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.css">
+</head>
+<body ng-app="backoffice">
+<nav class="navbar navbar-default" role="navigation">
+    <a class="navbar-brand" href="#">Template</a>
+
+    <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="#/layouts">Layouts</a></li>
+            <li><a href="#/pages">Pages</a></li>
+        </ul>
+    </div>
+</nav>
+<div ng-view></div>
+
+<!-- Modals -->
+<div id="errorModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel">Oops!</h3>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="alertModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="alert-title"></h3>
+            </div>
+            <div class="modal-body">
+                <p id="alert-body"></p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="askModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="ask-title">Dashboard</h3>
+            </div>
+            <div class="modal-body">
+                <p id="ask-body"></p>
+            </div>
+            <div class="modal-footer">
+                <button id="ask-ok" data-dismiss="modal" aria-hidden="true" class="btn btn-primary">Continue</button>
+                <button id="ask-cancel" class="btn btn-inverse" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="jquery/dist/jquery.js"></script>
+<script src="bootstrap/dist/js/bootstrap.js"></script>
+<script src="angular/angular.js"></script>
+<script src="angular-route/angular-route.js"></script>
+<script src="tinymce/tinymce.min.js"></script>
+<script src="angular-ui-tinymce/src/tinymce.js"></script>
+<script src="lodash/dist/lodash.js"></script>
+<script src="javascripts/clicks.js"></script>
+
+<!-- Directives -->
+<%directives%>
+
+<!-- Directives -->
+<%controls%>
+
+<!-- Filters -->
+<%filters%>
+
+<!-- Services -->
+<%services%>
+
+<!-- Controllers -->
+<%controllers%>
+</body>
+</html>

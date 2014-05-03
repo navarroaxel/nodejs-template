@@ -1,0 +1,22 @@
+{
+    "mode": "dev",
+    "info": {
+        "title": "Template"
+    },
+    "server": {
+        "port": 3000
+    },
+    "connectionString": "mongodb://127.0.0.1/database?safe=true",
+    "//": "mongodb://user:pass@server:port/database?safe=true",
+    "auth": {
+        "loginPage": "/signin",
+        "masterKey": "pass"
+    },
+    "email": {
+        "user": "user@gmail.com",
+        "password": "pass",
+        "server": "smtp.gmail.com",
+        "port": 465,
+        "useSSL": true
+    }
+}

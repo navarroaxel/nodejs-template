@@ -1,0 +1,16 @@
+<a href="#/layouts/new" class="btn btn-primary">New</a>
+<h2>Layouts</h2>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="layout in layouts">
+        <td>
+            <a href="#/layouts/{{layout.id}}">{{layout.name}}</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
