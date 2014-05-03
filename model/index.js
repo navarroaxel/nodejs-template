@@ -21,9 +21,9 @@ model.User = mongoose.model('User', new Schema({
     enabled: { type: Boolean, required: true, default: true }
 }).plugin(timestamps));
 
-loadModelExtensions('./model');
+loadModelExtensions('./model', model);
 
-function loadModelExtensions(folder) {
+function loadModelExtensions(folder, model) {
     // Loading entities dynamically
     require('fs').readdirSync(folder)
         .filter(function (e) {

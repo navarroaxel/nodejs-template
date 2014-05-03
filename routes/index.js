@@ -137,6 +137,7 @@ module.exports = function (router) {
     router.use('/api',
         require('./api')(express.Router()
                 .use(app.security.authenticate())
+                // I need the company loaded all the time.
                 .use(require('./companyMiddleware.js')())
         ));
 };
