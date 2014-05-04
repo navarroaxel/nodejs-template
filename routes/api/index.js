@@ -4,11 +4,11 @@ var fs = require('fs'),
 function loadModules(folder, router) {
     // Loading modules dynamically
     fs.readdirSync(folder)
-        .filter(function (e) {
-            return e.indexOf('.') == -1 && e.indexOf("api.") == -1;
-        }).forEach(function (e) {
-            console.log('Loading', e, 'api...');
-            router.use(require('./' + e)(express.Router()));
+        .filter(function (file) {
+            return file.indexOf('.') == -1 && file.indexOf("api.") == -1;
+        }).forEach(function (module) {
+            console.log('Loading', module, 'api...');
+            router.use(require('./' + module)(express.Router()));
         });
 }
 

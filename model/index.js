@@ -35,8 +35,8 @@ loadModelExtensions('./model', model);
 function loadModelExtensions(folder, model) {
     // Loading entities dynamically
     require('fs').readdirSync(folder)
-        .filter(function (e) {
-            return e.indexOf("index.js") == -1;
+        .filter(function (file) {
+            return file.indexOf("index.js") == -1;
         }).forEach(function (entity) {
             console.log('Loading', entity, 'entity...');
             require('./' + entity)(model);
