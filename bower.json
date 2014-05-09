@@ -1,27 +1,17 @@
 {
-  "name": "clicks",
-  "version": "0.0.1",
-  "license": "MIT",
-  "dependencies": {
-    "jquery": "2.1.x",
-    "angular": "1.2.x",
-    "bootstrap": "3.1.x",
-    "angular-route": "1.2.x",
-    "lodash": "~2.4.1",
-    "angular-ui-tinymce": "~0.0.5"
-  },
-  "install": {
-    "path": {
-      "css": "public/stylesheets",
-      "js": "public/javascripts",
-      "ttf": "public/fonts",
-      "eot": "public/fonts",
-      "svg": "public/fonts",
-      "woff": "public/fonts"
-    }
-  },
-  "ignore": [
-    "node_modules",
-    "bower_components"
-  ]
+    "name": "clicks",
+    "version": "0.0.1",
+    "license": "MIT",
+    "dependencies": {
+        "jquery": "2.1.x",
+        "angular": "1.2.x",
+        "bootstrap": "3.1.x",
+        "angular-route": "1.2.x",
+        "lodash": "~2.4.1",
+        "angular-ui-tinymce": "~0.0.5"
+    },
+    "ignore": [
+        "node_modules",
+        "bower_components"
+    ]
 }

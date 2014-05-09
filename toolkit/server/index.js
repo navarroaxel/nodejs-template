@@ -25,7 +25,7 @@ server.start = function () {
 
     api.use(favicon(path.join(__dirname, '../../public/favicon.ico')));
 
-    // javascripts and css libraries loaded using Bower.
+    // javascript and css libraries loaded using Bower.
     api.use(express.static(path.join(__dirname, '../../bower_components')));
     api.use(express.static(path.join(__dirname, '../../public')));
 
