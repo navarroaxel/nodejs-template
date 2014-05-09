@@ -47,4 +47,4 @@ All the html to build PDFs or e-mails, or another type of media resources for se
 more info about Bower in http://bower.io/
 
 # Changing connection string to database.
-You should looking for the connectionString field in the /config.json file. An example of a connection string is: [mongodb://<user>:<password>@<server>:<port>/<database>?safe=true]
+You should looking for the connectionString field in the /config.json file. An example of a connection string is: (mongodb://\<user\>:\<password\>@\<server\>:\<port\>/\<database\>?safe=true)
