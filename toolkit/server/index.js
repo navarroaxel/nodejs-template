@@ -33,7 +33,7 @@ server.start = function () {
         api.use(logger('dev'));
     }
     api.use(bodyParser.json());
-    api.use(bodyParser.urlencoded());
+    api.use(bodyParser.urlencoded({ extended: true }));
     api.use(cookieParser('MIIL9AYJKoZIhvcNAQcCoIIL5TCCC+ECAQExADALBgkqhkiG='));
     api.use(cookieSession({ secret: 'MIIL9AYJKoZIhvcNAQcCoIIL5TCCC+ECAQExADALBgkqhkiG=' }));
 
