@@ -1,5 +1,5 @@
 var model = app.model,
-    hash = app.security.hash,
+    hash = app.security.crypto.hash,
     validate = app.validation.validate,
     query = app.data.query,
     uid = require('node-uuid');
