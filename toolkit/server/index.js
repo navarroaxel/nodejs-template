@@ -31,6 +31,8 @@ server.start = function () {
 
     if (api.get('env') === 'development') {
         api.use(logger('dev'));
+    }else{
+        api.use(logger('combined'));
     }
     api.use(bodyParser.json());
     api.use(bodyParser.urlencoded({ extended: true }));

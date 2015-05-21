@@ -24,6 +24,10 @@ app.start = function () {
         // 1. Add Config
         app.config = config;
 
+        if (app.config.mode == 'prod') {
+            process.env.NODE_ENV = 'production';
+        }
+
         // 2. Setup mongoose client
         app.data.mongoClient.connectionString = config.connectionString;
 
