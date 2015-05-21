@@ -8,7 +8,7 @@ function loadModules(folder, router) {
             return file.indexOf('.') == -1 && file.indexOf("api.") == -1;
         }).forEach(function (module) {
             console.log('Loading', module, 'api...');
-            router.use(require('./' + module)(express.Router()));
+            router.use('/' + module, require('./' + module)(express.Router()));
         });
 }
 
